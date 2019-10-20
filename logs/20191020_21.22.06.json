@@ -1,0 +1,69 @@
+[
+  {
+    "name": "01-kolla-att-andras-modeller-laddas",
+    "request": {
+      "uri": "http://localhost:3000/api/andras/modeler",
+      "method": "get"
+    },
+    "response": [
+      {
+        "id": "annans-1",
+        "namn": "Orange",
+        "beskrivning": "Orange grund färg med flicka i siluette",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CYwyalpSD_23fYnqMCyjA-Tr0VjSEKLDpnR7BQuJNtMA9p2HsQ",
+        "pris": 199
+      },
+      {
+        "id": "annans-2",
+        "namn": "Multi färgad",
+        "beskrivning": "Fåglar och moln",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Ng5bDUzzvTTMqDp89HP4Pw91GDP0g_4FZpxbwIh7gA9siDftiQ",
+        "pris": 199
+      },
+      {
+        "id": "annans-3",
+        "namn": "Vit ko",
+        "beskrivning": "Vit med två kor",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfBXAuHgVwgbxRpTE_mSrHw2HaBRGshb18eCp8sPliG4WaD1ySA",
+        "pris": 199
+      },
+      {
+        "id": "annans-4",
+        "namn": "Grå katt",
+        "beskrivning": "Grå med katt",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpGGHLhH_jI83oXb5V9uxH1g1vxBW99UdBiAuAEHHGPadJUV73vw",
+        "pris": 199
+      },
+      {
+        "id": "annans-5",
+        "namn": "Vit med rött",
+        "beskrivning": "Vit med röd blomma och kollibri",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIeVharsbENVj_LU0mcuKmG9HauWgrs-k3XzTtsdDtfeYouRNd",
+        "pris": 199
+      },
+      {
+        "id": "annans-6",
+        "namn": "Vit med kafe",
+        "beskrivning": "Vit med kafe siluette",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX91g9aZRsvrAMoO-oDfBQmNRKbxjaCZcDF-QUaLMS5Sd6T5NehQ",
+        "pris": 199
+      }
+    ],
+    "tests": [
+      "assert.equal(response.length, 6)",
+      "assert.equal(response[0].id, \"annans-1\")",
+      "assert.equal(response[1].id, \"annans-2\")",
+      "assert.equal(response[2].id, \"annans-3\")",
+      "assert.equal(response[3].id, \"annans-4\")",
+      "assert.equal(response[4].id, \"annans-5\")",
+      "assert.equal(response[5].id, \"annans-6\")",
+      "assert.equal(response[0].pris, 199)",
+      "assert.equal(response[1].pris, 199)",
+      "assert.equal(response[2].pris, 199)",
+      "assert.equal(response[3].pris, 199)",
+      "assert.equal(response[4].pris, 199)",
+      "assert.equal(response[5].pris, 199)"
+    ],
+    "status": "passed"
+  }
+]

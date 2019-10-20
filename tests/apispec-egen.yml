@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Diana T-Shirt Shop API
+  description: Api beskrivning för Diana T-Shirt Shop
+  version: 0.1
+servers:
+  - url: http://localhost:3000/api
+    description: Lokal utvecklings server
+components:
+  schemas:
+    model:
+      type: object
+      properties:
+        id:
+          type: string
+        namn:
+          type: string
+        beskrivning:
+          type: string
+        imgSrc:
+          type: string
+        pris:
+          type: integer
+          format: int32
+
+paths:
+  /andras/modeler:
+    get:
+      summary: Retunderar en lista av tshirt modeller som andra har designat.
+      responses:
+        '200':    # status code
+          description: En JSON array med modeller
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  $ref: '#/components/schemas/model'
+  

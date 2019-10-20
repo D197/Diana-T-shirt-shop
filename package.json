@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "rest-server": "node rest-server.js",
+    "test:unit": "vue-cli-service test:unit",
+    "test:rest": "node test-runner.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -18,6 +20,10 @@
     "vue-router": "^3.1.3"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "open": "^6.4.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
     "@vue/cli-plugin-babel": "^3.12.0",
     "@vue/cli-plugin-eslint": "^3.12.0",
     "@vue/cli-plugin-router": "^4.0.0-alpha.4",
