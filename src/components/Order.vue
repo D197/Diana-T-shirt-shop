@@ -32,16 +32,21 @@ export default {
           Country:'',
         },
         tShirt: '',
-        numberOf: ''
+        numberOf: '',
+        AnnanId: ''
       },
 
       setFirstName(name) {
         this.orderData.CName = name;
       },
 
+      setTShirtAnnan(tShirtId) {
+        this.orderData.AnnanId = tShirtId;
+      },
       setTShirt(tShirt) {
         this.orderData.tShirt = tShirt;
       },
+
        setLastName(CLastName) {
         this.orderData.CLastName = CLastName;
       },
